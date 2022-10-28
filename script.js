@@ -1,11 +1,29 @@
-// let value1 = "one";
 
-// let value2 = "two";
 
-// var chosenValue = Math.random() < 0.5 ? value1 : value2;
 
-//////////////////
+//Function that gets a random variable (COMPLETE)
+function getComputerChoice() {
 
-let result = ["rock", "paper", "scissors"][Math.floor(Math.random() * 3)];
+let computerSelection = ["rock", "paper", "scissors"][Math.floor(Math.random() * 3)];
 
-console.log(result)
+return computerSelection;
+}
+
+console.log(getComputerChoice())
+
+
+//Function that allows a player to type and enter a variable
+function getPlayerChoice() {
+
+    let playerSelection = prompt("Select rock, paper, or scissors");
+
+    if(playerSelection == "rock") {
+        console.log("you chose rock")
+    } else if(playerSelection == "paper") {
+        console.log ("you chose paper")
+    } else if(playerSelection == "scissors") {
+        console.log("you chose scissors")
+    }
+}
+
+console.log(getPlayerChoice())
